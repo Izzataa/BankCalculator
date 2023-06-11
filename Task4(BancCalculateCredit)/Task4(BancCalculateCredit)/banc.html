@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Calculate</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/banc.css">
+</head>
+<body>
+    
+<main>
+    <section id="Calculator">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Kredit Kalkulyatoru</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="miqdar">Kredit məbləği (AZN)</label>
+                                    <input type="number" id="miqdar" class="form-control" min="1" max="100000"required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="muddet">Kredit müddəti (ay)</label>
+                                    <input type="number" id="muddet" class="form-control" min="1" max="60"required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="derece">Faiz dərəcəsi (%)</label>
+                                    <input type="number" id="derece" class="form-control" min="1" max="20" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="hesabla" class="btn btn-primary">Hesabla</button>
+                                </div>
+                            </form>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="js/main.js"></script>
+</html>
